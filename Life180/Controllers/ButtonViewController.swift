@@ -6,14 +6,31 @@
 //
 
 import UIKit
+import LocationSpoofer
 
 class ButtonViewController: UIViewController {
+    
+    @IBOutlet var spoofSwitch: UISwitch!
+    @IBOutlet var spoofed: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    @IBAction func switchHit(_ sender: UISwitch) {
+        if sender.isOn {
+            // spoof location
+            view.backgroundColor = .red
+            let alcatraz = CLLocation(latitude: 37.825944, longitude: -122.422398)
+            LocationSpoofer.shared.location = alcatraz
+            spoofed.text = "TRANSPORTED"
+        } else {
+            // unspoof location
+            view.backgroundColor = .white
+            spoofed.text = "NORMALIZED"
+        }
+    }
+    
 }
 

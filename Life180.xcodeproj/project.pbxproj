@@ -13,9 +13,11 @@
 		76B127B229105A48001717AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B127B029105A48001717AE /* Main.storyboard */; };
 		76B127B429105A4C001717AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B127B329105A4C001717AE /* Assets.xcassets */; };
 		76B127B729105A4C001717AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B127B529105A4C001717AE /* LaunchScreen.storyboard */; };
+		833D1431E634A824D7647483 /* Pods_Life180.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBBDE8F3488C1263A8EE88F /* Pods_Life180.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13C1ABE87BD001AE96BED4A7 /* Pods-Life180.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life180.release.xcconfig"; path = "Target Support Files/Pods-Life180/Pods-Life180.release.xcconfig"; sourceTree = "<group>"; };
 		76B127A729105A48001717AE /* Life180.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Life180.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B127AA29105A48001717AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76B127AC29105A48001717AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		76B127B329105A4C001717AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76B127B629105A4C001717AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76B127B829105A4C001717AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DBBDE8F3488C1263A8EE88F /* Pods_Life180.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Life180.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		962D0998EAABDBD2BA61C9BA /* Pods-Life180.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life180.debug.xcconfig"; path = "Target Support Files/Pods-Life180/Pods-Life180.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				833D1431E634A824D7647483 /* Pods_Life180.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		486D94899DA4E3967001265F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				962D0998EAABDBD2BA61C9BA /* Pods-Life180.debug.xcconfig */,
+				13C1ABE87BD001AE96BED4A7 /* Pods-Life180.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4C832F3F6634E116E25D71D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DBBDE8F3488C1263A8EE88F /* Pods_Life180.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76B1279E29105A48001717AE = {
 			isa = PBXGroup;
 			children = (
 				76B127A929105A48001717AE /* Life180 */,
 				76B127A829105A48001717AE /* Products */,
+				486D94899DA4E3967001265F /* Pods */,
+				4C832F3F6634E116E25D71D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76B127BB29105A4C001717AE /* Build configuration list for PBXNativeTarget "Life180" */;
 			buildPhases = (
+				84907429564523D990815F7E /* [CP] Check Pods Manifest.lock */,
 				76B127A329105A48001717AE /* Sources */,
 				76B127A429105A48001717AE /* Frameworks */,
 				76B127A529105A48001717AE /* Resources */,
+				44C045C86D266FF6013A2884 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +199,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44C045C86D266FF6013A2884 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Life180/Pods-Life180-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Life180/Pods-Life180-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Life180/Pods-Life180-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84907429564523D990815F7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Life180-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76B127A329105A48001717AE /* Sources */ = {
@@ -322,6 +391,7 @@
 		};
 		76B127BC29105A4C001717AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962D0998EAABDBD2BA61C9BA /* Pods-Life180.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -352,6 +422,7 @@
 		};
 		76B127BD29105A4C001717AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13C1ABE87BD001AE96BED4A7 /* Pods-Life180.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

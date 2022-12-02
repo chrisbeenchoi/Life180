@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,18 +14,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iQN-mQ-UB1">
+                                <rect key="frame" x="182.5" y="432.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchHit:" destination="BYZ-38-t0r" eventType="valueChanged" id="3rN-S4-EeI"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywr-SF-wck">
+                                <rect key="frame" x="119.5" y="382" width="175" height="20.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="WELCOME TO LIFE180">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iQN-mQ-UB1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AFc-NE-XqX"/>
+                            <constraint firstItem="iQN-mQ-UB1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AHr-dP-eWl"/>
+                            <constraint firstItem="Ywr-SF-wck" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CXD-xg-jq2"/>
+                            <constraint firstItem="iQN-mQ-UB1" firstAttribute="top" secondItem="Ywr-SF-wck" secondAttribute="bottom" constant="30" id="E88-gF-pE4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="spoofSwitch" destination="iQN-mQ-UB1" id="xs9-F1-B4x"/>
+                        <outlet property="spoofed" destination="Ywr-SF-wck" id="CsO-ge-TJi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="46"/>
+            <point key="canvasLocation" x="-130.43478260869566" y="-79.017857142857139"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

@@ -1,0 +1,16 @@
+PODS:
+  - LocationSpoofer (0.1.0)
+
+DEPENDENCIES:
+  - LocationSpoofer (~> 0.1)
+
+SPEC REPOS:
+  trunk:
+    - LocationSpoofer
+
+SPEC CHECKSUMS:
+  LocationSpoofer: 39f17a74cfee74c7eb6d1a4655d1d91556ee6e09
+
+PODFILE CHECKSUM: a73eacffe7b83a11f61ed57995278db8a8c0e274
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00809F04ABC36CC3F3CC55E7EC1BF3DA /* LOSPSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B488BA6979C542587A4452041049234 /* LOSPSwizzler.m */; };
+		04B00253B5A87B0C3F4989F19155DFBD /* LOSPLocationDebugViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD51CCABF6FB17BDF0ACB3DD0A84B2E /* LOSPLocationDebugViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		066D7AB67DEA34CC8A2EF072F91882E1 /* MKDirections+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E1BA23562F2DAEEDE669198CC7CB4C /* MKDirections+LOSPAdditions.m */; };
+		080B34A054B23B3EBDCE4A5A009BDD05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D175E7976A575B42D549FCCF9DC3FE86 /* Foundation.framework */; };
+		0B6BDBB29330281B1EBDBEE5A279CB43 /* MKMapView+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7A3F88C138BD2FADC2A5D0AE438F38 /* MKMapView+LOSPAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0FF41A9220BAA8EB41256801FD0335D9 /* Pods-Life180-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6641501033023FA86E7F13A6D2BBE68C /* Pods-Life180-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		173CEF2DC3722AB40BF3F2D7012176C3 /* LOSPLocationSpoofer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3C6BD14135F9F8A4B2262E561C06D /* LOSPLocationSpoofer.m */; };
+		2082992DE8681E00EC2137CC5E6E1713 /* CLPlacemark+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F90DC3BDEAFD33267BD9BC341B221041 /* CLPlacemark+LOSPAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27F66063AFA9DDCBDDC376F0C1C1820D /* UIView+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 583FD80A44762ECD96695BDE6070BB23 /* UIView+LOSPAdditions.m */; };
+		360959B9DBC5075FAF0099430762C0FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D175E7976A575B42D549FCCF9DC3FE86 /* Foundation.framework */; };
+		3F0FF6A2BD914359F95F68BBA9C4901B /* LOSPLocationPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC45D3A2EA44AA736F5B77C8FDF08A6 /* LOSPLocationPickerViewController.m */; };
+		4AD123F567A6E98D40B7336ECEED31FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED9B2E975A2C1CC4F9AA83B980067F6 /* CoreLocation.framework */; };
+		4D73183D1C25E9D3278EE805F42F5437 /* MKCoordinateSpan+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431B23B472BCAB724328DF13F22FF7A /* MKCoordinateSpan+LOSPAdditions.m */; };
+		52A04DC9063067C2010B1E92930C2B65 /* Pods-Life180-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 744BBABDB023773A80273B3D730B5095 /* Pods-Life180-dummy.m */; };
+		52D66E0BD298956B55A271B201F8F391 /* LocationSpoofer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FFC3007EEFB23C324B98EE91D3BBC3 /* LocationSpoofer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55CC99DECECFCDFFF88D58FD65ED4295 /* LOSPSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = C0B65C31FE2176C596C7090AE3DAF6C7 /* LOSPSwizzler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B09C5ACF438FD491520CC90F04F2DB2 /* LocationSpoofer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CDF14C765810870AD14F6A539E10AC /* LocationSpoofer-dummy.m */; };
+		5BC9161AF2A0F1B0B19269E738017484 /* LOSPLocationDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BDA9E4ED01EEC1982AFACA928B5DAF /* LOSPLocationDebugViewController.m */; };
+		5F54F77A2EA526194B28D2E0AF495B82 /* UIView+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E15257524E497E9AFC44ADC09509CCB3 /* UIView+LOSPAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		609F4DA21D47F1920C076FBF758685EB /* MKDirections+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D4FEF306704C7725F39B17EA190C866 /* MKDirections+LOSPAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		621BF063841D9D47C806D71825335987 /* LOSPTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8767BC2E27A63C8F2A1517565E96A /* LOSPTrip.m */; };
+		656C14199E508A018952CDB73D8D9D9D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B2C517FFC0D004B7A090AF5ED8B355 /* MapKit.framework */; };
+		72B55EE97E6F074F1EF26EDA480BBB16 /* LOSPTrip.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E907A00FDD2037D948FFCBE67ED295 /* LOSPTrip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		772A45BE90165DBDAFCD6BE4B89C4D31 /* LOSPRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A20357CA7B61E32C8742AD7FD90D1C /* LOSPRootViewController.m */; };
+		78D27F1DBBDA66CD1EF134AB20E21A58 /* LOSPPresetTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F0555DFDE4F5EBE4049B1B00D4FA2D /* LOSPPresetTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		885D5D042270C5FDD7ECA3B7A0A97AE5 /* LOSPTrip+LOSPPresets.m in Sources */ = {isa = PBXBuildFile; fileRef = 4366E4FA1BDFBF715DC2E2C5ABC61F69 /* LOSPTrip+LOSPPresets.m */; };
+		949EC028D14A6964C273A6DC8DEA5976 /* CLLocationCoordinate2D+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 812E626A5B14CD5538513CFAF1A0A18E /* CLLocationCoordinate2D+LOSPAdditions.m */; };
+		98D726864139FF049E4A53D0C0A155AA /* CLLocation+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D32EE3BC90AEE7B370333E5A8CCC6A /* CLLocation+LOSPAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A193ADB9D1081E25C587F875E49A0C80 /* CLLocationCoordinate2D+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DFB91FD2C4FA553B3C0C7A659FE3C3E /* CLLocationCoordinate2D+LOSPAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A655F3AA3C7A5E746CB93F795A61EBFD /* LOSPLocationSpoofer.h in Headers */ = {isa = PBXBuildFile; fileRef = 296BB3C44C7845BABDD7F15082147251 /* LOSPLocationSpoofer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A661A5061451C5FE7727442783AB34D8 /* CLPlacemark+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F16ED33FFC5448868E8F16DEC51E4A /* CLPlacemark+LOSPAdditions.m */; };
+		B7FF08F4C9DC7D63BBFC55CAAAA95EB4 /* LOSPLocationPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 65FC79D8DBCED032704FAFC97BF6A352 /* LOSPLocationPickerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA8CD77704E464939D4866F5C84DE5DD /* LOSPLocationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5A4ECE0F098C46397D4456F9EFA547 /* LOSPLocationProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEE3BC14E1E59911665C8E667A3AC448 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E929CF652B99023045249D5D5093A1 /* UIKit.framework */; };
+		C134038A3D4C275C3C85D3D63AF993CE /* MKMapView+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E7B1C7AD2E0E8F2D39890A1374285B /* MKMapView+LOSPAdditions.m */; };
+		CE33AE3B8E4E1AD03E5BE7178B7AE884 /* LOSPRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC75DC7C4605B7D0F472630F446AE7D /* LOSPRootViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4885D0279222C6135E3DC1B8D0F05B8 /* MKCoordinateSpan+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 554E3C245624428A5376091D86C6D318 /* MKCoordinateSpan+LOSPAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2EF1CB018C6FAB4014343FF96A0BF97 /* CLLocation+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77388A4E8E3480D4C17676DB61F1C1D3 /* CLLocation+LOSPAdditions.m */; };
+		E3A1913F9AA904656828CE63F9E35EB6 /* LOSPPresetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4DC8D363A4C779EACE42DC31B4C169 /* LOSPPresetTableViewController.m */; };
+		E5CE15E886CB2023E06DC97A3EBF6C4E /* LOSPTrip+LOSPPresets.h in Headers */ = {isa = PBXBuildFile; fileRef = 2214B8D1C8F4949721DFFB7695A879A9 /* LOSPTrip+LOSPPresets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A558F7CFD58504C1FB575583E0540BB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC51CDDA0A462256317BC91A1751C80A;
+			remoteInfo = LocationSpoofer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B488BA6979C542587A4452041049234 /* LOSPSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOSPSwizzler.m; path = LocationSpoofer/Classes/Private/LOSPSwizzler.m; sourceTree = "<group>"; };
+		0CC8767BC2E27A63C8F2A1517565E96A /* LOSPTrip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOSPTrip.m; path = LocationSpoofer/Classes/Public/LOSPTrip.m; sourceTree = "<group>"; };
+		0F639A075FF10A3FA2148CFEF2E72C71 /* LocationSpoofer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LocationSpoofer-Info.plist"; sourceTree = "<group>"; };
+		18BA8FE2C854319DB3AB634FD4D4165F /* LocationSpoofer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LocationSpoofer.modulemap; sourceTree = "<group>"; };
+		1A7F118AFE2002F857C726E26F9F490F /* Pods-Life180-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Life180-frameworks.sh"; sourceTree = "<group>"; };
+		1CA3C6BD14135F9F8A4B2262E561C06D /* LOSPLocationSpoofer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOSPLocationSpoofer.m; path = LocationSpoofer/Classes/Public/LOSPLocationSpoofer.m; sourceTree = "<group>"; };
+		1ED9B2E975A2C1CC4F9AA83B980067F6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		21CDF14C765810870AD14F6A539E10AC /* LocationSpoofer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocationSpoofer-dummy.m"; sourceTree = "<group>"; };
+		2214B8D1C8F4949721DFFB7695A879A9 /* LOSPTrip+LOSPPresets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LOSPTrip+LOSPPresets.h"; path = "LocationSpoofer/Classes/Public/LOSPTrip+LOSPPresets.h"; sourceTree = "<group>"; };
+		23981F398DD4232A6DDE98BEFCB30C9D /* Pods-Life180.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Life180.debug.xcconfig"; sourceTree = "<group>"; };
+		2431B23B472BCAB724328DF13F22FF7A /* MKCoordinateSpan+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKCoordinateSpan+LOSPAdditions.m"; path = "LocationSpoofer/Classes/Public/MKCoordinateSpan+LOSPAdditions.m"; sourceTree = "<group>"; };
+		25ACA19643156AA073CB50B9B1E0F9A7 /* LocationSpoofer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LocationSpoofer; path = LocationSpoofer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B2C517FFC0D004B7A090AF5ED8B355 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		296BB3C44C7845BABDD7F15082147251 /* LOSPLocationSpoofer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOSPLocationSpoofer.h; path = LocationSpoofer/Classes/Public/LOSPLocationSpoofer.h; sourceTree = "<group>"; };
+		3D4FEF306704C7725F39B17EA190C866 /* MKDirections+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKDirections+LOSPAdditions.h"; path = "LocationSpoofer/Classes/Private/MKDirections+LOSPAdditions.h"; sourceTree = "<group>"; };
+		40E1BA23562F2DAEEDE669198CC7CB4C /* MKDirections+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKDirections+LOSPAdditions.m"; path = "LocationSpoofer/Classes/Private/MKDirections+LOSPAdditions.m"; sourceTree = "<group>"; };
+		40E7B1C7AD2E0E8F2D39890A1374285B /* MKMapView+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKMapView+LOSPAdditions.m"; path = "LocationSpoofer/Classes/Private/MKMapView+LOSPAdditions.m"; sourceTree = "<group>"; };
+		4366E4FA1BDFBF715DC2E2C5ABC61F69 /* LOSPTrip+LOSPPresets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LOSPTrip+LOSPPresets.m"; path = "LocationSpoofer/Classes/Public/LOSPTrip+LOSPPresets.m"; sourceTree = "<group>"; };
+		44A20357CA7B61E32C8742AD7FD90D1C /* LOSPRootViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOSPRootViewController.m; path = LocationSpoofer/Classes/Private/LOSPRootViewController.m; sourceTree = "<group>"; };
+		45FFC3007EEFB23C324B98EE91D3BBC3 /* LocationSpoofer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocationSpoofer-umbrella.h"; sourceTree = "<group>"; };
+		4FE8E30BA4A24F3F1BBE8B30909AB388 /* Pods-Life180-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Life180-Info.plist"; sourceTree = "<group>"; };
+		554E3C245624428A5376091D86C6D318 /* MKCoordinateSpan+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKCoordinateSpan+LOSPAdditions.h"; path = "LocationSpoofer/Classes/Public/MKCoordinateSpan+LOSPAdditions.h"; sourceTree = "<group>"; };
+		57C9D096EF9173841C20D630A5664EC0 /* Pods-Life180-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Life180-acknowledgements.markdown"; sourceTree = "<group>"; };
+		583FD80A44762ECD96695BDE6070BB23 /* UIView+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LOSPAdditions.m"; path = "LocationSpoofer/Classes/Private/UIView+LOSPAdditions.m"; sourceTree = "<group>"; };
+		58D32EE3BC90AEE7B370333E5A8CCC6A /* CLLocation+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLLocation+LOSPAdditions.h"; path = "LocationSpoofer/Classes/Public/CLLocation+LOSPAdditions.h"; sourceTree = "<group>"; };
+		5BC09FFBC78296CE15710B5505B958FF /* LocationSpoofer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocationSpoofer.release.xcconfig; sourceTree = "<group>"; };
+		5BD51CCABF6FB17BDF0ACB3DD0A84B2E /* LOSPLocationDebugViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOSPLocationDebugViewController.h; path = LocationSpoofer/Classes/Public/LOSPLocationDebugViewController.h; sourceTree = "<group>"; };
+		61E929CF652B99023045249D5D5093A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		65FC79D8DBCED032704FAFC97BF6A352 /* LOSPLocationPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOSPLocationPickerViewController.h; path = LocationSpoofer/Classes/Private/LOSPLocationPickerViewController.h; sourceTree = "<group>"; };
+		6641501033023FA86E7F13A6D2BBE68C /* Pods-Life180-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Life180-umbrella.h"; sourceTree = "<group>"; };
+		744BBABDB023773A80273B3D730B5095 /* Pods-Life180-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Life180-dummy.m"; sourceTree = "<group>"; };
+		77388A4E8E3480D4C17676DB61F1C1D3 /* CLLocation+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLLocation+LOSPAdditions.m"; path = "LocationSpoofer/Classes/Public/CLLocation+LOSPAdditions.m"; sourceTree = "<group>"; };
+		7F053F0F0787CFF449C2B9741435B64E /* Pods-Life180 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Life180"; path = Pods_Life180.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		812E626A5B14CD5538513CFAF1A0A18E /* CLLocationCoordinate2D+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLLocationCoordinate2D+LOSPAdditions.m"; path = "LocationSpoofer/Classes/Private/CLLocationCoordinate2D+LOSPAdditions.m"; sourceTree = "<group>"; };
+		8A97EB5A8E2B7E0A4F527354B2BF3D9E /* Pods-Life180.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Life180.modulemap"; sourceTree = "<group>"; };
+		8DFB91FD2C4FA553B3C0C7A659FE3C3E /* CLLocationCoordinate2D+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLLocationCoordinate2D+LOSPAdditions.h"; path = "LocationSpoofer/Classes/Private/CLLocationCoordinate2D+LOSPAdditions.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA5A4ECE0F098C46397D4456F9EFA547 /* LOSPLocationProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOSPLocationProvider.h; path = LocationSpoofer/Classes/Public/LOSPLocationProvider.h; sourceTree = "<group>"; };
+		AB4DC8D363A4C779EACE42DC31B4C169 /* LOSPPresetTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOSPPresetTableViewController.m; path = LocationSpoofer/Classes/Private/LOSPPresetTableViewController.m; sourceTree = "<group>"; };
+		B7E907A00FDD2037D948FFCBE67ED295 /* LOSPTrip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOSPTrip.h; path = LocationSpoofer/Classes/Public/LOSPTrip.h; sourceTree = "<group>"; };
+		C0B65C31FE2176C596C7090AE3DAF6C7 /* LOSPSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOSPSwizzler.h; path = LocationSpoofer/Classes/Private/LOSPSwizzler.h; sourceTree = "<group>"; };
+		CA02338A26D4408F6A4E27EBABCFAB41 /* LocationSpoofer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocationSpoofer-prefix.pch"; sourceTree = "<group>"; };
+		D175E7976A575B42D549FCCF9DC3FE86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D769BFDA20CBDE2FF0E16B09AA68A27D /* LocationSpoofer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocationSpoofer.debug.xcconfig; sourceTree = "<group>"; };
+		D8F16ED33FFC5448868E8F16DEC51E4A /* CLPlacemark+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLPlacemark+LOSPAdditions.m"; path = "LocationSpoofer/Classes/Public/CLPlacemark+LOSPAdditions.m"; sourceTree = "<group>"; };
+		DE02FDED29CF73894DE09A50F8CB4C66 /* Pods-Life180.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Life180.release.xcconfig"; sourceTree = "<group>"; };
+		E15257524E497E9AFC44ADC09509CCB3 /* UIView+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LOSPAdditions.h"; path = "LocationSpoofer/Classes/Private/UIView+LOSPAdditions.h"; sourceTree = "<group>"; };
+		E1F0555DFDE4F5EBE4049B1B00D4FA2D /* LOSPPresetTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOSPPresetTableViewController.h; path = LocationSpoofer/Classes/Private/LOSPPresetTableViewController.h; sourceTree = "<group>"; };
+		E318C399C42EBD7B9D0C05CE54F6EDEB /* Pods-Life180-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Life180-acknowledgements.plist"; sourceTree = "<group>"; };
+		F8BDA9E4ED01EEC1982AFACA928B5DAF /* LOSPLocationDebugViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOSPLocationDebugViewController.m; path = LocationSpoofer/Classes/Public/LOSPLocationDebugViewController.m; sourceTree = "<group>"; };
+		F90DC3BDEAFD33267BD9BC341B221041 /* CLPlacemark+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLPlacemark+LOSPAdditions.h"; path = "LocationSpoofer/Classes/Public/CLPlacemark+LOSPAdditions.h"; sourceTree = "<group>"; };
+		FAC75DC7C4605B7D0F472630F446AE7D /* LOSPRootViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOSPRootViewController.h; path = LocationSpoofer/Classes/Private/LOSPRootViewController.h; sourceTree = "<group>"; };
+		FEC45D3A2EA44AA736F5B77C8FDF08A6 /* LOSPLocationPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOSPLocationPickerViewController.m; path = LocationSpoofer/Classes/Private/LOSPLocationPickerViewController.m; sourceTree = "<group>"; };
+		FF7A3F88C138BD2FADC2A5D0AE438F38 /* MKMapView+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKMapView+LOSPAdditions.h"; path = "LocationSpoofer/Classes/Private/MKMapView+LOSPAdditions.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		384AFB22E17CEB9577DF18610359765D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD123F567A6E98D40B7336ECEED31FA /* CoreLocation.framework in Frameworks */,
+				080B34A054B23B3EBDCE4A5A009BDD05 /* Foundation.framework in Frameworks */,
+				656C14199E508A018952CDB73D8D9D9D /* MapKit.framework in Frameworks */,
+				BEE3BC14E1E59911665C8E667A3AC448 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7EC20FB76C72AD04C407E6F79C9AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360959B9DBC5075FAF0099430762C0FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		224FFE53BFF7AAD403D5B393441EBFFD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1ED9B2E975A2C1CC4F9AA83B980067F6 /* CoreLocation.framework */,
+				D175E7976A575B42D549FCCF9DC3FE86 /* Foundation.framework */,
+				28B2C517FFC0D004B7A090AF5ED8B355 /* MapKit.framework */,
+				61E929CF652B99023045249D5D5093A1 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2CEA7D5AD88CBAB78976DD032CD950A6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38760197DC58B1FD2C51077D2087D2B9 /* Pods-Life180 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		38760197DC58B1FD2C51077D2087D2B9 /* Pods-Life180 */ = {
+			isa = PBXGroup;
+			children = (
+				8A97EB5A8E2B7E0A4F527354B2BF3D9E /* Pods-Life180.modulemap */,
+				57C9D096EF9173841C20D630A5664EC0 /* Pods-Life180-acknowledgements.markdown */,
+				E318C399C42EBD7B9D0C05CE54F6EDEB /* Pods-Life180-acknowledgements.plist */,
+				744BBABDB023773A80273B3D730B5095 /* Pods-Life180-dummy.m */,
+				1A7F118AFE2002F857C726E26F9F490F /* Pods-Life180-frameworks.sh */,
+				4FE8E30BA4A24F3F1BBE8B30909AB388 /* Pods-Life180-Info.plist */,
+				6641501033023FA86E7F13A6D2BBE68C /* Pods-Life180-umbrella.h */,
+				23981F398DD4232A6DDE98BEFCB30C9D /* Pods-Life180.debug.xcconfig */,
+				DE02FDED29CF73894DE09A50F8CB4C66 /* Pods-Life180.release.xcconfig */,
+			);
+			name = "Pods-Life180";
+			path = "Target Support Files/Pods-Life180";
+			sourceTree = "<group>";
+		};
+		3A3FECFF5E4BA281A3ECE9253EF8DD62 /* LocationSpoofer */ = {
+			isa = PBXGroup;
+			children = (
+				58D32EE3BC90AEE7B370333E5A8CCC6A /* CLLocation+LOSPAdditions.h */,
+				77388A4E8E3480D4C17676DB61F1C1D3 /* CLLocation+LOSPAdditions.m */,
+				8DFB91FD2C4FA553B3C0C7A659FE3C3E /* CLLocationCoordinate2D+LOSPAdditions.h */,
+				812E626A5B14CD5538513CFAF1A0A18E /* CLLocationCoordinate2D+LOSPAdditions.m */,
+				F90DC3BDEAFD33267BD9BC341B221041 /* CLPlacemark+LOSPAdditions.h */,
+				D8F16ED33FFC5448868E8F16DEC51E4A /* CLPlacemark+LOSPAdditions.m */,
+				5BD51CCABF6FB17BDF0ACB3DD0A84B2E /* LOSPLocationDebugViewController.h */,
+				F8BDA9E4ED01EEC1982AFACA928B5DAF /* LOSPLocationDebugViewController.m */,
+				65FC79D8DBCED032704FAFC97BF6A352 /* LOSPLocationPickerViewController.h */,
+				FEC45D3A2EA44AA736F5B77C8FDF08A6 /* LOSPLocationPickerViewController.m */,
+				AA5A4ECE0F098C46397D4456F9EFA547 /* LOSPLocationProvider.h */,
+				296BB3C44C7845BABDD7F15082147251 /* LOSPLocationSpoofer.h */,
+				1CA3C6BD14135F9F8A4B2262E561C06D /* LOSPLocationSpoofer.m */,
+				E1F0555DFDE4F5EBE4049B1B00D4FA2D /* LOSPPresetTableViewController.h */,
+				AB4DC8D363A4C779EACE42DC31B4C169 /* LOSPPresetTableViewController.m */,
+				FAC75DC7C4605B7D0F472630F446AE7D /* LOSPRootViewController.h */,
+				44A20357CA7B61E32C8742AD7FD90D1C /* LOSPRootViewController.m */,
+				C0B65C31FE2176C596C7090AE3DAF6C7 /* LOSPSwizzler.h */,
+				0B488BA6979C542587A4452041049234 /* LOSPSwizzler.m */,
+				B7E907A00FDD2037D948FFCBE67ED295 /* LOSPTrip.h */,
+				0CC8767BC2E27A63C8F2A1517565E96A /* LOSPTrip.m */,
+				2214B8D1C8F4949721DFFB7695A879A9 /* LOSPTrip+LOSPPresets.h */,
+				4366E4FA1BDFBF715DC2E2C5ABC61F69 /* LOSPTrip+LOSPPresets.m */,
+				554E3C245624428A5376091D86C6D318 /* MKCoordinateSpan+LOSPAdditions.h */,
+				2431B23B472BCAB724328DF13F22FF7A /* MKCoordinateSpan+LOSPAdditions.m */,
+				3D4FEF306704C7725F39B17EA190C866 /* MKDirections+LOSPAdditions.h */,
+				40E1BA23562F2DAEEDE669198CC7CB4C /* MKDirections+LOSPAdditions.m */,
+				FF7A3F88C138BD2FADC2A5D0AE438F38 /* MKMapView+LOSPAdditions.h */,
+				40E7B1C7AD2E0E8F2D39890A1374285B /* MKMapView+LOSPAdditions.m */,
+				E15257524E497E9AFC44ADC09509CCB3 /* UIView+LOSPAdditions.h */,
+				583FD80A44762ECD96695BDE6070BB23 /* UIView+LOSPAdditions.m */,
+				C62D410F48A4F7A174A0E2517AD0078A /* Support Files */,
+			);
+			name = LocationSpoofer;
+			path = LocationSpoofer;
+			sourceTree = "<group>";
+		};
+		AD1E5B0BD58A2DD500A827217AA55663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25ACA19643156AA073CB50B9B1E0F9A7 /* LocationSpoofer */,
+				7F053F0F0787CFF449C2B9741435B64E /* Pods-Life180 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				224FFE53BFF7AAD403D5B393441EBFFD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C62D410F48A4F7A174A0E2517AD0078A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18BA8FE2C854319DB3AB634FD4D4165F /* LocationSpoofer.modulemap */,
+				21CDF14C765810870AD14F6A539E10AC /* LocationSpoofer-dummy.m */,
+				0F639A075FF10A3FA2148CFEF2E72C71 /* LocationSpoofer-Info.plist */,
+				CA02338A26D4408F6A4E27EBABCFAB41 /* LocationSpoofer-prefix.pch */,
+				45FFC3007EEFB23C324B98EE91D3BBC3 /* LocationSpoofer-umbrella.h */,
+				D769BFDA20CBDE2FF0E16B09AA68A27D /* LocationSpoofer.debug.xcconfig */,
+				5BC09FFBC78296CE15710B5505B958FF /* LocationSpoofer.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LocationSpoofer";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				F18D57012F4771F6B45AE2433B55C6E6 /* Pods */,
+				AD1E5B0BD58A2DD500A827217AA55663 /* Products */,
+				2CEA7D5AD88CBAB78976DD032CD950A6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F18D57012F4771F6B45AE2433B55C6E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A3FECFF5E4BA281A3ECE9253EF8DD62 /* LocationSpoofer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A158D2812A3782D285F90A3E2062351 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF41A9220BAA8EB41256801FD0335D9 /* Pods-Life180-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D43DBA97259643846B8386A3015C0528 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D726864139FF049E4A53D0C0A155AA /* CLLocation+LOSPAdditions.h in Headers */,
+				A193ADB9D1081E25C587F875E49A0C80 /* CLLocationCoordinate2D+LOSPAdditions.h in Headers */,
+				2082992DE8681E00EC2137CC5E6E1713 /* CLPlacemark+LOSPAdditions.h in Headers */,
+				52D66E0BD298956B55A271B201F8F391 /* LocationSpoofer-umbrella.h in Headers */,
+				04B00253B5A87B0C3F4989F19155DFBD /* LOSPLocationDebugViewController.h in Headers */,
+				B7FF08F4C9DC7D63BBFC55CAAAA95EB4 /* LOSPLocationPickerViewController.h in Headers */,
+				BA8CD77704E464939D4866F5C84DE5DD /* LOSPLocationProvider.h in Headers */,
+				A655F3AA3C7A5E746CB93F795A61EBFD /* LOSPLocationSpoofer.h in Headers */,
+				78D27F1DBBDA66CD1EF134AB20E21A58 /* LOSPPresetTableViewController.h in Headers */,
+				CE33AE3B8E4E1AD03E5BE7178B7AE884 /* LOSPRootViewController.h in Headers */,
+				55CC99DECECFCDFFF88D58FD65ED4295 /* LOSPSwizzler.h in Headers */,
+				72B55EE97E6F074F1EF26EDA480BBB16 /* LOSPTrip.h in Headers */,
+				E5CE15E886CB2023E06DC97A3EBF6C4E /* LOSPTrip+LOSPPresets.h in Headers */,
+				D4885D0279222C6135E3DC1B8D0F05B8 /* MKCoordinateSpan+LOSPAdditions.h in Headers */,
+				609F4DA21D47F1920C076FBF758685EB /* MKDirections+LOSPAdditions.h in Headers */,
+				0B6BDBB29330281B1EBDBEE5A279CB43 /* MKMapView+LOSPAdditions.h in Headers */,
+				5F54F77A2EA526194B28D2E0AF495B82 /* UIView+LOSPAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3968A967EBB1BCC5087ECF6D6F16DD40 /* Pods-Life180 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE08423D431AE9DDA173C98104C1543 /* Build configuration list for PBXNativeTarget "Pods-Life180" */;
+			buildPhases = (
+				4A158D2812A3782D285F90A3E2062351 /* Headers */,
+				A09A8FFEB090257313B67006999DD68B /* Sources */,
+				8C7EC20FB76C72AD04C407E6F79C9AC0 /* Frameworks */,
+				FEF7B197E43EB3C0EE0A1BCBF44C8E65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07174D34B4C7E71504C5FD3EAE9065FB /* PBXTargetDependency */,
+			);
+			name = "Pods-Life180";
+			productName = Pods_Life180;
+			productReference = 7F053F0F0787CFF449C2B9741435B64E /* Pods-Life180 */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC51CDDA0A462256317BC91A1751C80A /* LocationSpoofer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A85865502B72D0D797AF38964E67CA0 /* Build configuration list for PBXNativeTarget "LocationSpoofer" */;
+			buildPhases = (
+				D43DBA97259643846B8386A3015C0528 /* Headers */,
+				7F3FE26022614A5B00F88614E097DB7A /* Sources */,
+				384AFB22E17CEB9577DF18610359765D /* Frameworks */,
+				53243DF75FC41BA589DC622F5DDFA65D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationSpoofer;
+			productName = LocationSpoofer;
+			productReference = 25ACA19643156AA073CB50B9B1E0F9A7 /* LocationSpoofer */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AD1E5B0BD58A2DD500A827217AA55663 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC51CDDA0A462256317BC91A1751C80A /* LocationSpoofer */,
+				3968A967EBB1BCC5087ECF6D6F16DD40 /* Pods-Life180 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53243DF75FC41BA589DC622F5DDFA65D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF7B197E43EB3C0EE0A1BCBF44C8E65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F3FE26022614A5B00F88614E097DB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2EF1CB018C6FAB4014343FF96A0BF97 /* CLLocation+LOSPAdditions.m in Sources */,
+				949EC028D14A6964C273A6DC8DEA5976 /* CLLocationCoordinate2D+LOSPAdditions.m in Sources */,
+				A661A5061451C5FE7727442783AB34D8 /* CLPlacemark+LOSPAdditions.m in Sources */,
+				5B09C5ACF438FD491520CC90F04F2DB2 /* LocationSpoofer-dummy.m in Sources */,
+				5BC9161AF2A0F1B0B19269E738017484 /* LOSPLocationDebugViewController.m in Sources */,
+				3F0FF6A2BD914359F95F68BBA9C4901B /* LOSPLocationPickerViewController.m in Sources */,
+				173CEF2DC3722AB40BF3F2D7012176C3 /* LOSPLocationSpoofer.m in Sources */,
+				E3A1913F9AA904656828CE63F9E35EB6 /* LOSPPresetTableViewController.m in Sources */,
+				772A45BE90165DBDAFCD6BE4B89C4D31 /* LOSPRootViewController.m in Sources */,
+				00809F04ABC36CC3F3CC55E7EC1BF3DA /* LOSPSwizzler.m in Sources */,
+				621BF063841D9D47C806D71825335987 /* LOSPTrip.m in Sources */,
+				885D5D042270C5FDD7ECA3B7A0A97AE5 /* LOSPTrip+LOSPPresets.m in Sources */,
+				4D73183D1C25E9D3278EE805F42F5437 /* MKCoordinateSpan+LOSPAdditions.m in Sources */,
+				066D7AB67DEA34CC8A2EF072F91882E1 /* MKDirections+LOSPAdditions.m in Sources */,
+				C134038A3D4C275C3C85D3D63AF993CE /* MKMapView+LOSPAdditions.m in Sources */,
+				27F66063AFA9DDCBDDC376F0C1C1820D /* UIView+LOSPAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09A8FFEB090257313B67006999DD68B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A04DC9063067C2010B1E92930C2B65 /* Pods-Life180-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07174D34B4C7E71504C5FD3EAE9065FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LocationSpoofer;
+			target = AC51CDDA0A462256317BC91A1751C80A /* LocationSpoofer */;
+			targetProxy = A558F7CFD58504C1FB575583E0540BB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4321EE5BD9204302E7BA0A50E5DBB500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BC09FFBC78296CE15710B5505B958FF /* LocationSpoofer.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LocationSpoofer/LocationSpoofer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LocationSpoofer/LocationSpoofer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LocationSpoofer/LocationSpoofer.modulemap";
+				PRODUCT_MODULE_NAME = LocationSpoofer;
+				PRODUCT_NAME = LocationSpoofer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		614D2ECA31F0FB9265C2553157E782B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D769BFDA20CBDE2FF0E16B09AA68A27D /* LocationSpoofer.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LocationSpoofer/LocationSpoofer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LocationSpoofer/LocationSpoofer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LocationSpoofer/LocationSpoofer.modulemap";
+				PRODUCT_MODULE_NAME = LocationSpoofer;
+				PRODUCT_NAME = LocationSpoofer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		971C8B6C3797A90E6BF344FB9F2BD740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23981F398DD4232A6DDE98BEFCB30C9D /* Pods-Life180.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Life180/Pods-Life180-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Life180/Pods-Life180.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADDBD921DD76B9D1C00F61AD5098D55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE02FDED29CF73894DE09A50F8CB4C66 /* Pods-Life180.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Life180/Pods-Life180-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Life180/Pods-Life180.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A85865502B72D0D797AF38964E67CA0 /* Build configuration list for PBXNativeTarget "LocationSpoofer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614D2ECA31F0FB9265C2553157E782B8 /* Debug */,
+				4321EE5BD9204302E7BA0A50E5DBB500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE08423D431AE9DDA173C98104C1543 /* Build configuration list for PBXNativeTarget "Pods-Life180" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971C8B6C3797A90E6BF344FB9F2BD740 /* Debug */,
+				ADDBD921DD76B9D1C00F61AD5098D55A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
